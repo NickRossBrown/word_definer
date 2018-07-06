@@ -5,11 +5,11 @@ class Word
    def initialize (word)
      @word = word
    end
-   def self.all()
+   def self.all
      @@word_list
    end
-   def save()
-     @@word_list.push(self)
+   def add_to_list
+     @@word_list.push(@word)
    end
 
 end
