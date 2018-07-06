@@ -12,7 +12,7 @@ end
 post('/') do
   word = params["word"]
   words = Word.new(word)
-  words.save
+  words.save()
   @word_list = Word.all()
   erb(:input)
 end
