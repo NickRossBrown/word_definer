@@ -2,12 +2,15 @@
   <div class="title">
     <h1>List of favorite things</h1>
   </div>
+  <% @word_list.each do |word| %>
+    <h2><%= word.word %></h2>
+  <% end %>
 
   <form action="/" method="post">
     <div class="form-group">
-      <label for="form">Enter Word</label>
-      <input id="enterWord" name="form" class="form-control" type="text">
+      <label for="word">Add A Word</label>
+      <input id="word" name="word" class="form-control" type="text">
     </div>
-    <button type="submit" class="btn btn-primary">Go!</button>
+    <button type="submit" class="btn btn-primary">Enter</button>
   </form>
 </div>
