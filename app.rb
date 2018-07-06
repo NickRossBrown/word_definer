@@ -12,7 +12,11 @@ end
 post('/') do
   word = params["word"]
   words = Word.new(word)
-  words.save()
+  words.save
   @word_list = Word.all()
   erb(:input)
+end
+get ('/words/:id') do
+  @word = Word.find(params[:id])
+  erb(:output)
 end

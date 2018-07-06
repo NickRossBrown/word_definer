@@ -2,9 +2,13 @@
   <div class="title">
     <h1>List of favorite things</h1>
   </div>
-  <% @word_list.each do |word| %>
-    <h2><%= word.word %></h2>
+  <% @word_list.each do |string| %>
+    <h2><a href="/words/<%=string.id %>"<%= string.word %></a></h2>
   <% end %>
+  <% @word_list.each do |string| %>
+    <h2><%= string.word %></h2>
+  <% end %>
+
 
   <form action="/" method="post">
     <div class="form-group">
