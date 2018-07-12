@@ -1,7 +1,15 @@
 
-<h1><%= @wordpage.word %></h1>
+
 <h1><%= @wordpage.id %></h1>
-<h1><%= @wordpage.definition %></h1>
+<h1><%= @wordpage.word %></h1>
+<div class="definitionsDisplay card">
+  <% @wordpage.definition.each do |definition| %>
+  <ul>
+    <li> <%= definition %> </li>
+  </ul>
+  <% end %>
+</div>
+
 
 <form action='/word/<%= @wordpage.id %>' method="post">
   <div class="form-group card">
