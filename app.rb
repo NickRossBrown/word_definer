@@ -13,22 +13,21 @@ post('/') do
   word = params["word"]
   words = Word.new(word)
   defin = params["definition"]
-  @definition = defin
+  words.add_definition(defin)
   words.save
   @word_list = Word.all()
-  # binding.pry
   erb(:input)
 end
 
 get ('/words/:id') do
-  @word = Word.find(params[:id])
-  @definition = Word.definition(params[definition])
+  @wordpage = Word.find(params[:id])
   erb(:output)
 end
 
 post('/word/:id') do
-  binding.pry
+  @wordpage = Word.find(params[:id].to_i)
   defin = params["definition"]
-  @definition = Word.definition(defin)
+  @wordpage.add_definition(defin)
+
   erb(:output)
 end

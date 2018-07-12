@@ -1,9 +1,9 @@
 
-<h1><%= @word.word %></h1>
-<h1><%= @word.id %></h1>
-<h1><%= @definition %></h1>
+<h1><%= @wordpage.word %></h1>
+<h1><%= @wordpage.id %></h1>
+<h1><%= @wordpage.definition %></h1>
 
-<form action='/word/:id' method="post">
+<form action='/word/<%= @wordpage.id %>' method="post">
   <div class="form-group card">
     <label for="definition">Add A definition</label>
     <input id="definition" name="definition" class="form-control" type="text">

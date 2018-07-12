@@ -33,7 +33,7 @@ class Word
     end
   end
 
-  def definition (define)
+  def add_definition (define)
     @definition.push(define)
   end
 
