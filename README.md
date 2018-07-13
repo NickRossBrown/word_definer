@@ -5,9 +5,11 @@
 #### By Nick Brown
 
 
-## Description
+## Description/layout
 
 A dynamic webpage that allows a user to input a word and write definitions for the inputted word. A user can add endless definitions to each word. Each inputted word that is displayed on the homepage has a link its own webpage that displays all of that word's definitions. 
+
+#### [link to app webpage hosted on Heroku]([https://wordcountrubynick.herokuapp.com/)
 
 
 ## Specifications
@@ -44,6 +46,12 @@ A dynamic webpage that allows a user to input a word and write definitions for t
     - A tasty fruit that keeps the doctor away
     - A piece of food that Adam or eve could not live without
   ```
+  
+## Design 
+
+![Homepage view](public/img/Screen%20Shot%202018-07-13%20at%2012.00.48%20AM.png)
+
+![Word page view](public/img/Screen%20Shot%202018-07-13%20at%2012.04.29%20AM.png)
 
 ## Setup/Contribution Requirements
 
