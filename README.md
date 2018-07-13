@@ -7,19 +7,43 @@
 
 ## Description
 
-A dynamic webpage that allows a user to input a word and write definitions for the inputted word.
+A dynamic webpage that allows a user to input a word and write definitions for the inputted word. A user can add endless definitions to each word. Each inputted word that is displayed on the homepage has a link its own webpage that displays all of that word's definitions. 
+
 
 ## Specifications
-* _
-* _1
+
+* _1 display each word that a user enters into the app
   - _Example Input: _
+  ```
+  Enter word: "apple"
+  ```
   - _Example Output: _
-* _2
+  ```
+  "apple"
+  ```
+* _2 allows a user to also add a custom definition when submitting a new word
   - _Example Input: _
+  ```
+  word: Enter word:"apple"
+  Enter Definition: "a tasty fruit that keeps the doctor away"
+  ```
+
   - _Example Output: _
-* _3
-  - _Example Input: _
+  ```
+  apple
+    - "a tasty fruit that keeps the doctor away"
+  ```
+* _3 allows a user to enter multiple definitions for each word
+  - _Example Input: _ Enter
+  ```
+   Addition Definition: "A piece of food that Adam or eve could not live without"
+   ```
   - _Example Output: _
+  ```
+  apple
+    - A tasty fruit that keeps the doctor away
+    - A piece of food that Adam or eve could not live without
+  ```
 
 ## Setup/Contribution Requirements
 
