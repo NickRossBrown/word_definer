@@ -5,9 +5,9 @@ require 'word_count'
 describe("word_count") do
   describe(".all") do
   it("returns all saved values initially empty") do
-    # Word.clear
+    Word.clear
     word = Word.new("dragon")
-    expect(Word.all).to(eq(['dragon']))
+    expect(Word.all).to(eq([]))
     end
   end
   describe("#add_to_list") do

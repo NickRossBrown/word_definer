@@ -1,19 +1,14 @@
 <div class="container">
   <div class="title card">
-    <h1>List of favorite things</h1>
+    <h1>Welcome To The Custom Word Definer Webpage!</h1>
+    <h4>After your enter a word, the word will be displayed on the webpage. Click on the word to view the word's definition webpage. You can then add additional definitions on the word's definitions webpage. </h4>
   </div>
-  <div class="presetWords card">
-    <h2>Antidisestablishmentarianism</h2>
-    <h2>Pugnacious</h2>
 
-  </div>
   <div class="inputtedWords card">
     <% @word_list.each do |string| %>
       <h2><a href="/words/<%=string.id %>"><%= string.word %></a></h2>
     <% end %>
   </div>
-
-
 
   <form action="/" method="post">
     <div class="form-group card">

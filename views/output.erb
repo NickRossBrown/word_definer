@@ -3,8 +3,6 @@
   <button type="submit" class="btn btn-primary">Return to Homepage</button>
 </form>
 
-
-<h1><%= @wordpage.id %></h1>
 <h1><%= @wordpage.word %></h1>
 <div class="container">
   <% @wordpage.definition.each do |definition| %>
@@ -12,17 +10,23 @@
     <li> <%= definition %> </li>
   </ul>
   <% end %>
+
   <form action='/word/<%= @wordpage.id %>' method="post">
     <div class="form-group card">
       <label for="definition">Add A definition</label>
       <input id="definition" name="definition" class="form-control" type="text">
     </div>
     <button type="submit" class="btn btn-primary">Enter</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
   </form>
 
   <table border="5"  align="right" width="100%">
   <tr>
-    <td border="5" bgcolor="pink" colspan="3">
+    <td align="center" border="5" bgcolor="pink" colspan="3">
       <font size="40"> <strong><%= @wordpage.word %></strong></font>
     </td>
   </tr>
