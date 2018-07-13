@@ -9,8 +9,7 @@
 
 A dynamic webpage that allows a user to input a word and write definitions for the inputted word. A user can add endless definitions to each word. Each inputted word that is displayed on the homepage has a link its own webpage that displays all of that word's definitions. 
 
-#### [link to app webpage hosted on Heroku]([https://wordcountrubynick.herokuapp.com/)
-
+####  [link to app webpage hosted on Heroku](https://wordcountrubynick.herokuapp.com/)
 
 ## Specifications
 
