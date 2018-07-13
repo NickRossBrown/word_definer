@@ -15,7 +15,7 @@ post('/') do
   defin = params["definition"]
   words.add_definition(defin)
   new_color = "%06x" % (rand * 0xffffff)
-  @wordpage.add_color(new_color)
+  words.add_color(new_color)
   words.save
   @word_list = Word.all()
   erb(:input)
