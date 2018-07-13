@@ -1,11 +1,13 @@
 class Word
   @@word_list=[]
   attr_reader :id
-  attr_accessor :word, :definition
+  attr_accessor :word, :definition, :color, :definition_color
    def initialize (word)
      @word = word
      @id = @@word_list.length + 1
      @definition = []
+     @color = ("%06x" % (rand * 0xffffff))
+     @definition_color = []
    end
 
    def self.all
@@ -35,6 +37,10 @@ class Word
 
   def add_definition (define)
     @definition.push(define)
+  end
+
+  def add_color (color)
+    @definition_color.push(color)
   end
 
 end

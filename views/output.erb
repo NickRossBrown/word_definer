@@ -8,6 +8,37 @@
     <li> <%= definition %> </li>
   </ul>
   <% end %>
+  <table border="5"  align="center" width="50%">
+  <tr>
+    <td bgcolor="pink" colspan="3"> <strong><%= @wordpage.word %></strong> </td>
+
+  </tr>
+  <%= x=0 %>
+  <% @wordpage.definition.each do |definition| %>
+
+    <tr bgcolor='<%=@wordpage.definition_color[x]%>' >
+      <td>Definition  <%= x %></td>
+
+
+      <td bgcolor='<%=@wordpage.definition_color[x]%>' > <%= definition %>  </td>
+      <td>'<%=@wordpage.definition_color[x]%>'</td>
+      <td>counter <%= x+=1 %></td>
+
+
+    </tr>
+
+    <% end %>
+
+    <tr>
+      <td >  </td>
+
+    </tr>
+
+  </table>
+
+
+
+
 </div>
 
 
